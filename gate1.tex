@@ -1,0 +1,35 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{txfonts}
+\usepackage{tkz-euclide}
+\usepackage{listings}
+\usepackage{gvv}
+\usepackage[latin1]{inputenc}
+\usepackage{array}
+\usepackage{pgf}
+\usepackage{lmodern}
+
+\begin{document}
+\bibliographystyle{IEEEtran}
+
+\title{GATE 2023[IN]-36}
+\author{EE23BTECH11066 - Yakkala Amarnath Karthik}
+\maketitle
+\bibliographystyle{IEEEtran}
+\textbf{Question:}\\ \\
+The impulse response of an LTI system is $h\brak{t}$= $\delta\brak{t}$+0.5$ \delta\brak{t-4}$, where $\delta\brak{t}$ is continuous-time unit impulse signal.if the input signal $x(t)=cos\brak{\frac{7\pi t}{4}}$,the output is\\ \\
+
+\textbf{Solution:}\\
+
+\input{tables/input}
+
+
+ from \tabref{tab:gate2023in36}
+\begin{align}
+    y\brak{t} &=x\brak{t} * h\brak{t}\\
+            &=cos\brak{\frac{7\pi t}{4}}+0.5cos\brak{\frac{7\pi \brak{t-4}}{4}}\\
+            &=cos\brak{\frac{7\pi t}{4}}+0.5cos\brak{\frac{7\pi t}{4}-7\pi}\\
+            &=0.5cos\brak{\frac{7\pi t}{4}}
+\end{align}
+
+\end{document}
