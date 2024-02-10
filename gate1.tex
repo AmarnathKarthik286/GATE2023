@@ -20,13 +20,30 @@
 The impulse response of an LTI system is $h\brak{t}$= $\delta\brak{t}$+0.5$ \delta\brak{t-4}$, where $\delta\brak{t}$ is continuous-time unit impulse signal.if the input signal $x(t)=cos\brak{\frac{7\pi t}{4}}$,the output is\\ \\
 
 \textbf{Solution:}\\
-
-\input{tables/input}
-
-
+\begin{table}[!h]
+  \centering
+  \begin{tabular}{|c|c|c|}
+    \hline
+    \textbf{Variable} & \textbf{Description} & \textbf{value}\\
+    \hline
+    $\delta\brak{t}$ & continuous-time unit impulse signal & 1 if t=0;\\ & &  0 in other cases\\
+   \hline
+    $h\brak{t}$ & impulse response & $\delta\brak{t}$+0.5$ \delta\brak{t-4}$ \\
+    \hline
+    $x\brak{t}$ & input signal  & $x(t)=cos\brak{\frac{7\pi t}{4}}$ \\
+    \hline
+    $y\brak{t}$ & output signal & x\brak{t}$ *$ h\brak{t} \\
+    \hline
+  \end{tabular}
+  \caption{A Table with input parameters}
+  \label{tab:gate2023in36}
+\end{table}\\
  from \tabref{tab:gate2023in36}
 \begin{align}
-    y\brak{t} &=x\brak{t} * h\brak{t}\\
+    y\brak{t} &=x\brak{t} * h\brak{t}=h\brak{t} * x\brak{t}\\
+            &=\int_{-\infty}^{\infty} h\brak{\tau}x\brak{t-\tau}d\tau\\
+            &=\int_{-\infty}^{\infty}\sbrak{\delta\brak{\tau}x\brak{t-\tau}+0.5\delta\brak{\tau-4}x\brak{t-\tau}}d\tau\\
+            &=x\brak{t}+0.5x\brak{t-4}\\
             &=cos\brak{\frac{7\pi t}{4}}+0.5cos\brak{\frac{7\pi \brak{t-4}}{4}}\\
             &=cos\brak{\frac{7\pi t}{4}}+0.5cos\brak{\frac{7\pi t}{4}-7\pi}\\
             &=0.5cos\brak{\frac{7\pi t}{4}}
