@@ -17,7 +17,7 @@
 \maketitle
 \bibliographystyle{IEEEtran}
 \textbf{Question:}\\ \\
-The impulse response of an LTI system is $h\brak{t}$= $\delta\brak{t}$+0.5$ \delta\brak{t-4}$, where $\delta\brak{t}$ is continuous-time unit impulse signal.if the input signal $x(t)=cos\brak{\frac{7\pi t}{4}}$,the output is\\ \\
+The impulse response of an LTI system is $h\brak{t}$= $\delta\brak{t}$+0.5$ \delta\brak{t-4}$, where $\delta\brak{t}$ is continuous-time unit impulse signal.if the input signal $x(t)=\cos\brak{\frac{7\pi t}{4}}$,the output is\hfill(GATE IN 2023)\\ \\
 
 \textbf{Solution:}\\
 \begin{table}[!h]
@@ -30,7 +30,7 @@ The impulse response of an LTI system is $h\brak{t}$= $\delta\brak{t}$+0.5$ \del
    \hline
     $h\brak{t}$ & impulse response & $\delta\brak{t}$+0.5$ \delta\brak{t-4}$ \\
     \hline
-    $x\brak{t}$ & input signal  & $x(t)=cos\brak{\frac{7\pi t}{4}}$ \\
+    $x\brak{t}$ & input signal  & $x(t)=\cos\brak{\frac{7\pi t}{4}}$ \\
     \hline
     $y\brak{t}$ & output signal & x\brak{t}$ *$ h\brak{t} \\
     \hline
@@ -40,13 +40,18 @@ The impulse response of an LTI system is $h\brak{t}$= $\delta\brak{t}$+0.5$ \del
 \end{table}\\
  from \tabref{tab:gate2023in36}
 \begin{align}
-    y\brak{t} &=h\brak{t} * x\brak{t}\\
-            &=\int_{-\infty}^{\infty} h\brak{\tau}x\brak{t-\tau}d\tau\\
-            &=\int_{-\infty}^{\infty}\sbrak{\delta\brak{\tau}x\brak{t-\tau}+0.5\delta\brak{\tau-4}x\brak{t-\tau}}d\tau\\
+    y\brak{t} &=x\brak{t} * h\brak{t}\\
+            &=x\brak{t} * \brak{\delta\brak{t}+0.5 \delta\brak{t-4}}\\
             &=x\brak{t}+0.5x\brak{t-4}\\
-            &=cos\brak{\frac{7\pi t}{4}}+0.5cos\brak{\frac{7\pi \brak{t-4}}{4}}\\
-            &=cos\brak{\frac{7\pi t}{4}}+0.5cos\brak{\frac{7\pi t}{4}-7\pi}\\
-            &=0.5cos\brak{\frac{7\pi t}{4}}
+            &=\cos\brak{\frac{7\pi t}{4}}+0.5\cos\brak{\frac{7\pi \brak{t-4}}{4}}\\
+            &=\cos\brak{\frac{7\pi t}{4}}+0.5\cos\brak{\frac{7\pi t}{4}-7\pi}\\
+            &=0.5\cos\brak{\frac{7\pi t}{4}}
 \end{align}
+
+  \begin{figure}[ht]
+        \centering
+        \includegraphics[width=0.45\textwidth]{figs/pythongate.png}
+        \caption{Graph showing first 8 terms of the GP}
+    \end{figure} 
 
 \end{document}
