@@ -20,24 +20,7 @@
 The impulse response of an LTI system is $h\brak{t}$= $\delta\brak{t}$+0.5$ \delta\brak{t-4}$, where $\delta\brak{t}$ is continuous-time unit impulse signal.if the input signal $x(t)=\cos\brak{\frac{7\pi t}{4}}$,the output is\hfill(GATE IN 2023)\\ \\
 
 \textbf{Solution:}\\
-\begin{table}[!h]
-  \centering
-  \begin{tabular}{|c|c|c|}
-    \hline
-    \textbf{Variable} & \textbf{Description} & \textbf{value}\\
-    \hline
-    $\delta\brak{t}$ & continuous-time unit impulse signal & 1 if t=0;\\ & &  0 in other cases\\
-   \hline
-    $h\brak{t}$ & impulse response & $\delta\brak{t}$+0.5$ \delta\brak{t-4}$ \\
-    \hline
-    $x\brak{t}$ & input signal  & $x(t)=\cos\brak{\frac{7\pi t}{4}}$ \\
-    \hline
-    $y\brak{t}$ & output signal & x\brak{t}$ *$ h\brak{t} \\
-    \hline
-  \end{tabular}
-  \caption{A Table with input parameters}
-  \label{tab:gate2023in36}
-\end{table}\\
+\input{tables/input}\\
  from \tabref{tab:gate2023in36}
 \begin{align}
     y\brak{t} &=x\brak{t} * h\brak{t}\\
@@ -48,14 +31,13 @@ The impulse response of an LTI system is $h\brak{t}$= $\delta\brak{t}$+0.5$ \del
             &=0.5\cos\brak{\frac{7\pi t}{4}}
 \end{align}
 \begin{align}
-    \text{Transform function}\brak{H\brak{t}}&=\frac{y\brak{t}}{x\brak{t}}\\
-    &=\frac{0.5\cos\brak{\frac{7\pi t}{4}}}{\cos\brak{\frac{7\pi t}{4}}}\\
+    \text{Transform function}\brak{H\brak{s}}&=\frac{y\brak{s}}{x\brak{s}}\\
+    &=\frac{{\frac{0.5s}{s^2+30.2257}}}{{\frac{+s}{s^2+30.2257}}}\\
     &=0.5
 \end{align}
 
   \begin{figure}[ht]
-        \centering
-        \includegraphics[width=0.45\textwidth]{figs/pythongate.png}
+        \hspace{1cm}\includegraphics[width=0.45\textwidth]{figs/pythongate.png}
         \caption{Graph showing x(t) and y(t)}
     \end{figure} 
 
