@@ -30,12 +30,20 @@ The impulse response of an LTI system is $h\brak{t}$= $\delta\brak{t}$+0.5$ \del
             &=\cos\brak{\frac{7\pi t}{4}}+0.5\cos\brak{\frac{7\pi t}{4}-7\pi}\\
             &=0.5\cos\brak{\frac{7\pi t}{4}}
 \end{align}
+
+from \tabref{tab:gate2023in36}
 \begin{align}
-    \text{Transform function}\brak{H\brak{s}}&=\frac{y\brak{s}}{x\brak{s}}\\
-    &=\frac{{\frac{0.5s}{s^2+30.2257}}}{{\frac{+s}{s^2+30.2257}}}\\
+    Y\brak{s}=\mathcal{L}\sbrak{0.5\cos{\brak{\frac{7\pi t}{4}}}}=\frac{0.5s}{s^2+\sbrak{\frac{7\pi}{t}}^2}\\
+    \text{similarly} X\brak{s}=\frac{s}{s^2+\sbrak{\frac{7\pi}{t}}^2}
+\end{align}
+\\ \\ \\
+\begin{align}
+    \text{Transfer function}\brak{H\brak{s}}&=\frac{Y\brak{s}}{X\brak{s}}\\
+    &=\frac{{\frac{0.5s}{s^2+30.2257}}}{{\frac{s}{s^2+30.2257}}}\\
     &=0.5
 \end{align}
-
+\bigskip
+\bigskip
   \begin{figure}[ht]
         \hspace{1cm}\includegraphics[width=0.45\textwidth]{figs/pythongate.png}
         \caption{Graph showing x(t) and y(t)}
