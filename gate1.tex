@@ -35,11 +35,14 @@ The impulse response of an LTI system is $h\brak{t}$= $\delta\brak{t}$+0.5$ \del
 \begin{align}
     &Y\brak{f} = X\brak{f}H\brak{f}\\
    &=\frac{1}{2}\sbrak{\delta \brak{f-\frac{7}{8}}+\delta \brak{f+\frac{7}{8}}}\sbrak{1+0.5e^{-j8\pi f}}
-         \end{align} \\ \\ \\
- \vspace{10cm}
+         \end{align} \\ \\
+ \vspace{7.2cm}
 \begin{align}
-  \hspace{1cm}Y\brak{f} &=\frac{1}{2}\brak{1+0.5e^{-j8\pi f}}\delta \brak{f-\frac{7}{8}}+\nonumber\\
-   &\frac{1}{4}\brak{1+0.5e^{-j8\pi f}}\delta \brak{f-\frac{7}{8}}e^{-j8\pi f}\\
+  \hspace{1cm}&Y\brak{f} =\frac{1}{2}\brak{1+0.5e^{-j8\pi f}}\delta \brak{f-\frac{7}{8}}+\nonumber\\
+   &\frac{1}{2}\brak{1+0.5e^{-j8\pi f}}\delta \brak{f+\frac{7}{8}}\\
+   &=\frac{1}{2}\brak{1+0.5\brak{-1}}\delta \brak{f-\frac{7}{8}}+\nonumber\\
+   &\frac{1}{2}\brak{1+0.5\brak{-1}}\delta \brak{f+\frac{7}{8}}\\
+  &=\frac{1}{4}\sbrak{\delta \brak{f-\frac{7}{8}}+\delta \brak{f+\frac{7}{8}}}\\
    &=\frac{1}{2}X\brak{f}
 \end{align}
 
