@@ -1,16 +1,15 @@
 \begin{table}[ht]
- \centering
   \begin{tabular}{|c|c|c|}
     \hline
     \textbf{Variable} & \textbf{Description} & \textbf{value}\\
     \hline
-    $\delta\brak{t}$ & continuous-time unit impulse signal &$\infty$ if t=0;  0 in other cases \\& &$\int_{-\infty} ^ {\infty} \delta\brak{t}=1$\\
+    $\delta\brak{t}$ & Dirac delta function &$\infty$ if t=0;  0 in other cases \\& &$\int_{-\infty} ^ {\infty} \delta\brak{t}=1$\\
    \hline
     $h\brak{t}$ & impulse response & $\delta\brak{t}$+0.5$ \delta\brak{t-4}$ \\
     \hline
     $x\brak{t}$ & input signal  & $x(t)=cos\brak{\frac{7\pi t}{4}}$ \\
     \hline
-        $y\brak{t}$ & output signal  & ? \\
+$y\brak{t}$ & output signal & x\brak{t}$ *$ h\brak{t} \\
     \hline
      $\mathcal{F}\brak{\cos{a t}}$ & Fourier transform of $\cos{a t}$ & $0.5\sbrak{\delta \brak{f-\frac{a}{2\pi}}+\delta \brak{f+\frac{a}{2\pi}}}$\\
     \hline
