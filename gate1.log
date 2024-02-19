@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.8)  19 FEB 2024 10:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.8)  19 FEB 2024 10:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1074,6 +1074,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--41
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
+
+ []
+
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
@@ -1082,7 +1087,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--41
 Here is how much of TeX's memory you used:
  21194 strings out of 478287
  448590 string characters out of 5849290
- 703439 words of memory out of 5000000
+ 704439 words of memory out of 5000000
  38894 multiletter control sequences out of 15000+600000
  635116 words of font info for 143 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -1102,7 +1107,7 @@ usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/pu
 blic/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/shar
 e/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm
 /lmsy9.pfb>
-Output written on gate1.pdf (1 page, 352635 bytes).
+Output written on gate1.pdf (1 page, 353391 bytes).
 PDF statistics:
  104 PDF objects out of 1000 (max. 8388607)
  64 compressed objects within 1 object stream
