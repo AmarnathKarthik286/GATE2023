@@ -21,25 +21,25 @@ The impulse response of an LTI system is $h\brak{t}$= $\delta\brak{t}$+0.5$ \del
 
 \textbf{Solution:}\\
 \input{tables/input}\\
- from \tabref{tab:gate2023in36}
+from \tabref{tab:gate2023in36}
 \begin{align}
-    y\brak{t} &=x\brak{t} * h\brak{t}\\
-            &=x\brak{t} * \brak{\delta\brak{t}+0.5 \delta\brak{t-4}}\\
-            &=x\brak{t}+0.5x\brak{t-4}\\
-            &=\cos\brak{\frac{7\pi t}{4}}+0.5\cos\brak{\frac{7\pi \brak{t-4}}{4}}\\
-            &=\cos\brak{\frac{7\pi t}{4}}+0.5\cos\brak{\frac{7\pi t}{4}-7\pi}\\
-            &=0.5\cos\brak{\frac{7\pi t}{4}}
+    &Y\brak{f} = X\brak{f}H\brak{f}\\
+   % &= \sbrak{1+0.5e^{-j8\pi f}}\sbrak{\pi \sbrak{\delta \brak{2\pi f - \frac{7\pi}{4}}}+ \delta \brak{2\pi f + \frac{7\pi}{4}}}\\
+   &=0.5\sbrak{\delta \brak{f-\frac{7}{8}}+\delta \brak{f+\frac{7}{8}}}\sbrak{1+0.5e^{-j8\pi f}}
+ % Suppress equation numbering for this line
 \end{align}
 
+Finding inverse fourier transform of Y$\brak{f}$:
 \begin{align}
-    \text{Transfer function}\brak{H\brak{f}}&=\frac{Y\brak{f}}{X\brak{f}}\\
-    &=\frac{0.5\pi \sbrak{\delta \brak{2\pi f - \frac{7\pi}{4}}+ \delta \brak{2\pi f + \frac{7\pi}{4}}}}{\pi \sbrak{\delta \brak{2\pi f - \frac{7\pi}{4}}+ \delta \brak{2\pi f + \frac{7\pi}{4}}}}\\
-    &=0.5
+    y\brak{t}&=\int_{-\infty}^{\infty}Y\brak{f}e^{j2\pi ft}df\\
+    &=0.5\cos\brak{{\frac{7\pi t}{4}}}
 \end{align}
+
 
   \begin{figure}[ht]
-        \hspace{3cm}\\ \\ \\ \\ \\ \\\includegraphics[width=0.45\textwidth]{figs/pythongate.png}
+        \hspace{3cm} \\ \\ \\ \\ \\ \\ \\ \includegraphics[width=0.45\textwidth]{figs/pythongate.png}
         \caption{Graph showing x(t) and y(t)}
     \end{figure} 
 
 \end{document}
+

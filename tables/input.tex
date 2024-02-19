@@ -10,13 +10,15 @@
     \hline
     $x\brak{t}$ & input signal  & $x(t)=cos\brak{\frac{7\pi t}{4}}$ \\
     \hline
-    $y\brak{t}$ & output signal & x\brak{t}$ *$ h\brak{t} \\
+        $y\brak{t}$ & output signal  & ? \\
     \hline
-     $\mathcal{F}\brak{\cos{2\pi f_0 t}}$ & Fourier transform of $\cos{2\pi f_0 t}$ & $\pi \sbrak{\delta \brak{2\pi f - 2\pi f_0}+ \delta \brak{2\pi f +2\pi f_0}}$\\
+     $\mathcal{F}\brak{\cos{a t}}$ & Fourier transform of $\cos{a t}$ & $0.5\sbrak{\delta \brak{f-\frac{a}{2\pi}}+\delta \brak{f+\frac{a}{2\pi}}}$\\
     \hline
-    $Y\brak{f}$ &  Fourier transform of $y\brak{t}$ & 0.5$\pi \sbrak{\delta \brak{2\pi f - \frac{7\pi}{4}}+ \delta \brak{2\pi f + \frac{7\pi}{4}}}$\\
+    $X\brak{f}$ & Fourier transform of $x\brak{t}$ & $0.5\sbrak{\delta \brak{f-\frac{7}{8}}+\delta \brak{f+\frac{7}{8}}}$\\
     \hline
-    $X\brak{f}$ & Fourier transform of $x\brak{t}$ & $\pi \sbrak{\delta \brak{2\pi f - \frac{7\pi}{4}}}+ \delta \brak{2\pi f + \frac{7\pi}{4}}$\\
+        $H\brak{f}$ & Fourier transform of $h\brak{t}$ & 1+0.5$e^{-j8\pi f}$\\
+    \hline
+     $Y\brak{f}$ & Fourier transform of $y\brak{t}$ & $X\brak{f}H\brak{f}$\\
     \hline
     \end{tabular}
   \caption{A Table with input parameters}
